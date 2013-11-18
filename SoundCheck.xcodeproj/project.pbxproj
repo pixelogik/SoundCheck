@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F11FE54183A3F7E00E26A4F /* SCModifiedLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F11FE53183A3F7E00E26A4F /* SCModifiedLoginViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F1FEABF1838F11D00FC3EFB /* SCTrackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */; };
 		7F1FEAC11838F29800FC3EFB /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC01838F29800FC3EFB /* cloud.png */; };
 		7F1FEAC318390E1200FC3EFB /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC218390E1200FC3EFB /* bg.png */; };
@@ -72,6 +73,8 @@
 /* Begin PBXFileReference section */
 		080CB402FC69487C94E3428C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		58CC7099BF8A4A81AD244FC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F11FE52183A3F7E00E26A4F /* SCModifiedLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCModifiedLoginViewController.h; sourceTree = "<group>"; };
+		7F11FE53183A3F7E00E26A4F /* SCModifiedLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCModifiedLoginViewController.m; sourceTree = "<group>"; };
 		7F1FEABD1838F11D00FC3EFB /* SCTrackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackTableViewCell.h; sourceTree = "<group>"; };
 		7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackTableViewCell.m; sourceTree = "<group>"; };
 		7F1FEAC01838F29800FC3EFB /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
@@ -173,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F11FE51183A3F6D00E26A4F /* SoundCloud */ = {
+			isa = PBXGroup;
+			children = (
+				7F11FE52183A3F7E00E26A4F /* SCModifiedLoginViewController.h */,
+				7F11FE53183A3F7E00E26A4F /* SCModifiedLoginViewController.m */,
+			);
+			name = SoundCloud;
+			sourceTree = "<group>";
+		};
 		7F1FEABC1838F10D00FC3EFB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +375,7 @@
 		7FB6EEF21838D3010074E88F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7F11FE51183A3F6D00E26A4F /* SoundCloud */,
 				7F3720E3183A1ECC00FA8F1F /* Views */,
 				7F7848EE1838E35A00017DA3 /* Scenes */,
 				7F7848ED1838E33F00017DA3 /* Misc */,
@@ -562,6 +575,7 @@
 				7FB6EF041838DE4F0074E88F /* SCBackgroundBubbleNode.m in Sources */,
 				7F1FEAC61839128100FC3EFB /* SCTrackUser.m in Sources */,
 				7FB6EED31838D2E90074E88F /* SCViewController.m in Sources */,
+				7F11FE54183A3F7E00E26A4F /* SCModifiedLoginViewController.m in Sources */,
 				7FB6EF051838DE4F0074E88F /* SCTrackResponse.m in Sources */,
 				7FB6EEC91838D2E90074E88F /* main.m in Sources */,
 				7FB6EF011838DE4F0074E88F /* SCBubbleScene.m in Sources */,

@@ -3,10 +3,6 @@ SoundCheck
 
 Playing around with the SoundCloud API
 
-IMPORTANT:
-
-Please do not do "pod install". I had to fix a little thing in the SoundcloudUI that caused crashes sometimes when the login vc was dismissed. The scrollview's delegate is not set to nil in SCLoginViewController's dealloc and sometimes the scrollview calls the delegate after the vc was destroyed. That's why the pods are in the repository.
-
 WHAT IS DOES/HAS:
 
 - You can login and logout

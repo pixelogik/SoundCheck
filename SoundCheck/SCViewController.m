@@ -17,6 +17,7 @@
 #import "SCContentSearchController.h"
 #import "SCBubbleScene.h"
 #import "SCSearchTextField.h"
+#import "SCModifiedLoginViewController.h"
 
 @interface SCViewController ()
 
@@ -297,9 +298,9 @@
     };
     
     [SCSoundCloud requestAccessWithPreparedAuthorizationURLHandler:^(NSURL *preparedURL) {
-        SCLoginViewController *loginViewController;
+        SCModifiedLoginViewController *loginViewController;
         
-        loginViewController = [SCLoginViewController
+        loginViewController = (SCModifiedLoginViewController*)[SCModifiedLoginViewController
                                loginViewControllerWithPreparedURL:preparedURL
                                completionHandler:handler];
         [self presentViewController:loginViewController animated:YES completion:nil];
