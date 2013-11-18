@@ -241,7 +241,7 @@
         // Set cell content
         cell.titleLabel.text = track.title;
         cell.usernameLabel.text = track.user.username;
-        cell.artworkImageView.image = track.artworkImage ? track.artworkImage : [UIImage imageNamed:@"cloud.png"];
+        cell.artworkImageView.image = track.artworkImage ? track.artworkImage : [UIImage imageNamed:@"dummy_artwork.png"];
 
         // We do not want to see the selection because the app is left immediately
         cell.selectionStyle = UITableViewCellSelectionStyleNone;

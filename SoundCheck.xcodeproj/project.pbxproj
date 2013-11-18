@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7F11FE54183A3F7E00E26A4F /* SCModifiedLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F11FE53183A3F7E00E26A4F /* SCModifiedLoginViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F1FEABF1838F11D00FC3EFB /* SCTrackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */; };
-		7F1FEAC11838F29800FC3EFB /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC01838F29800FC3EFB /* cloud.png */; };
 		7F1FEAC318390E1200FC3EFB /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC218390E1200FC3EFB /* bg.png */; };
 		7F1FEAC61839128100FC3EFB /* SCTrackUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC51839128100FC3EFB /* SCTrackUser.m */; };
 		7F1FEACF1839132200FC3EFB /* DoppioOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC91839132200FC3EFB /* DoppioOne-Regular.ttf */; };
@@ -17,6 +16,7 @@
 		7F1FEAD11839132200FC3EFB /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACC1839132200FC3EFB /* OFL.txt */; };
 		7F1FEAD21839132200FC3EFB /* Sintony-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACD1839132200FC3EFB /* Sintony-Bold.ttf */; };
 		7F1FEAD31839132200FC3EFB /* Sintony-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACE1839132200FC3EFB /* Sintony-Regular.ttf */; };
+		7F29EB9A183A75440085B234 /* dummy_artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F29EB99183A75440085B234 /* dummy_artwork.png */; };
 		7F36688D183A175D00C2E948 /* trackResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F36688C183A175D00C2E948 /* trackResponse.json */; };
 		7F3720E6183A1F2D00FA8F1F /* SCSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3720E5183A1F2D00FA8F1F /* SCSearchTextField.m */; };
 		7F45D1CF183992ED008F9A70 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F91838E46100017DA3 /* AddressBook.framework */; };
@@ -77,7 +77,6 @@
 		7F11FE53183A3F7E00E26A4F /* SCModifiedLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCModifiedLoginViewController.m; sourceTree = "<group>"; };
 		7F1FEABD1838F11D00FC3EFB /* SCTrackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackTableViewCell.h; sourceTree = "<group>"; };
 		7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackTableViewCell.m; sourceTree = "<group>"; };
-		7F1FEAC01838F29800FC3EFB /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		7F1FEAC218390E1200FC3EFB /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		7F1FEAC41839128100FC3EFB /* SCTrackUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackUser.h; sourceTree = "<group>"; };
 		7F1FEAC51839128100FC3EFB /* SCTrackUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackUser.m; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		7F1FEACC1839132200FC3EFB /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		7F1FEACD1839132200FC3EFB /* Sintony-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sintony-Bold.ttf"; sourceTree = "<group>"; };
 		7F1FEACE1839132200FC3EFB /* Sintony-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sintony-Regular.ttf"; sourceTree = "<group>"; };
+		7F29EB99183A75440085B234 /* dummy_artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dummy_artwork.png; sourceTree = "<group>"; };
 		7F36688C183A175D00C2E948 /* trackResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trackResponse.json; sourceTree = "<group>"; };
 		7F3720E4183A1F2D00FA8F1F /* SCSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSearchTextField.h; sourceTree = "<group>"; };
 		7F3720E5183A1F2D00FA8F1F /* SCSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSearchTextField.m; sourceTree = "<group>"; };
@@ -276,8 +276,8 @@
 		7F7849001838E98000017DA3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7F29EB99183A75440085B234 /* dummy_artwork.png */,
 				7F1FEAC218390E1200FC3EFB /* bg.png */,
-				7F1FEAC01838F29800FC3EFB /* cloud.png */,
 				7F7849011838E98000017DA3 /* bg_bubble.png */,
 				7F7849031838E98000017DA3 /* wave.png */,
 			);
@@ -482,12 +482,12 @@
 				7F1FEAD31839132200FC3EFB /* Sintony-Regular.ttf in Resources */,
 				7FB6EED51838D2E90074E88F /* Images.xcassets in Resources */,
 				7F1FEAD21839132200FC3EFB /* Sintony-Bold.ttf in Resources */,
-				7F1FEAC11838F29800FC3EFB /* cloud.png in Resources */,
 				7F36688D183A175D00C2E948 /* trackResponse.json in Resources */,
 				7F1FEAD01839132200FC3EFB /* OFL.txt in Resources */,
 				7F7849061838E98000017DA3 /* wave.png in Resources */,
 				7F1FEAC318390E1200FC3EFB /* bg.png in Resources */,
 				7F1FEACF1839132200FC3EFB /* DoppioOne-Regular.ttf in Resources */,
+				7F29EB9A183A75440085B234 /* dummy_artwork.png in Resources */,
 				7FB6EEC71838D2E90074E88F /* InfoPlist.strings in Resources */,
 				7FB6EED01838D2E90074E88F /* Main.storyboard in Resources */,
 			);
