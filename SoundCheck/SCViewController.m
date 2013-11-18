@@ -224,7 +224,9 @@
         @synchronized(cell) {
             // If this cell was currently visualizing another track, remove it from the mapping dict
             if (cell.trackId) {
-                [self.trackIdToTableViewCell removeObjectForKey:cell.trackId];
+                @synchronized(self.trackIdToTableViewCell) {
+                    [self.trackIdToTableViewCell removeObjectForKey:cell.trackId];
+                }
             }
             
             // Write new track id to cell. This will cause "image update"-blocks to NOT change this cell
@@ -232,7 +234,9 @@
         }
         
         // Register cell in dict (again, we use this to update the image views when the track's images do arrive)
-        [self.trackIdToTableViewCell setObject:cell forKey:cell.trackId];
+        @synchronized(self.trackIdToTableViewCell) {
+            [self.trackIdToTableViewCell setObject:cell forKey:cell.trackId];
+        }
 
         // Set cell content
         cell.titleLabel.text = track.title;
@@ -408,7 +412,11 @@
                     track.artworkImage = track.artworkImage ? [SCUtils scaleImage:track.artworkImage toSize:CGSizeMake(60, 60)] : nil;
                     
                     // Check if there is currently a cell that visualizes this track.
-                    SCTrackTableViewCell *cell = self.trackIdToTableViewCell[[track.id stringValue]];
+                    SCTrackTableViewCell *cell = nil;
+                    @synchronized(self.trackIdToTableViewCell) {
+                        cell = self.trackIdToTableViewCell[[track.id stringValue]];
+                    }
+                    
                     // If so, change image view content of cell
                     if (cell && track.artworkImage) {
                         dispatch_async(dispatch_get_main_queue(), ^{
