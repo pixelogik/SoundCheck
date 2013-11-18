@@ -3,6 +3,8 @@ SoundCheck
 
 Playing around with the SoundCloud API
 
+First do "pod intall", then work on workspace.
+
 WHAT IS DOES/HAS:
 
 - You can login and logout
