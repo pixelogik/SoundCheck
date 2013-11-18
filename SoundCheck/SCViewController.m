@@ -222,7 +222,7 @@
         // We do a synchronized write here because the image loading code updates the
         // cell's image view content based on the associated track
         @synchronized(cell) {
-            // If this cell was currently visualizing another cell, remove it from the mapping dict
+            // If this cell was currently visualizing another track, remove it from the mapping dict
             if (cell.trackId) {
                 [self.trackIdToTableViewCell removeObjectForKey:cell.trackId];
             }
