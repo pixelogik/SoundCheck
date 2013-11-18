@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1FEABF1838F11D00FC3EFB /* SCTrackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */; };
+		7F1FEAC11838F29800FC3EFB /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC01838F29800FC3EFB /* cloud.png */; };
+		7F1FEAC318390E1200FC3EFB /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC218390E1200FC3EFB /* bg.png */; };
+		7F1FEAC61839128100FC3EFB /* SCTrackUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC51839128100FC3EFB /* SCTrackUser.m */; };
+		7F1FEACF1839132200FC3EFB /* DoppioOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEAC91839132200FC3EFB /* DoppioOne-Regular.ttf */; };
+		7F1FEAD01839132200FC3EFB /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACA1839132200FC3EFB /* OFL.txt */; };
+		7F1FEAD11839132200FC3EFB /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACC1839132200FC3EFB /* OFL.txt */; };
+		7F1FEAD21839132200FC3EFB /* Sintony-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACD1839132200FC3EFB /* Sintony-Bold.ttf */; };
+		7F1FEAD31839132200FC3EFB /* Sintony-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1FEACE1839132200FC3EFB /* Sintony-Regular.ttf */; };
+		7F36688D183A175D00C2E948 /* trackResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F36688C183A175D00C2E948 /* trackResponse.json */; };
+		7F3720E6183A1F2D00FA8F1F /* SCSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3720E5183A1F2D00FA8F1F /* SCSearchTextField.m */; };
+		7F45D1CF183992ED008F9A70 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F91838E46100017DA3 /* AddressBook.framework */; };
+		7F45D1D0183992ED008F9A70 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848FA1838E46100017DA3 /* AddressBookUI.framework */; };
+		7F45D1D1183992ED008F9A70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F71838E45100017DA3 /* CoreLocation.framework */; };
+		7F45D1D2183992ED008F9A70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F31838E44000017DA3 /* QuartzCore.framework */; };
+		7F45D1D3183992ED008F9A70 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848EF1838E43100017DA3 /* SpriteKit.framework */; };
+		7F45D1D6183992ED008F9A70 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F45D1D4183992ED008F9A70 /* MobileCoreServices.framework */; };
+		7F45D1D7183992ED008F9A70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F45D1D5183992ED008F9A70 /* SystemConfiguration.framework */; };
+		7F45D1D818399307008F9A70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEBE1838D2E90074E88F /* CoreGraphics.framework */; };
+		7F7848F01838E43100017DA3 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848EF1838E43100017DA3 /* SpriteKit.framework */; };
+		7F7848F21838E43A00017DA3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F11838E43A00017DA3 /* Security.framework */; };
+		7F7848F41838E44000017DA3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F31838E44000017DA3 /* QuartzCore.framework */; };
+		7F7848F61838E44700017DA3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F51838E44700017DA3 /* CoreText.framework */; };
+		7F7848F81838E45100017DA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F71838E45100017DA3 /* CoreLocation.framework */; };
+		7F7848FB1838E46100017DA3 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848F91838E46100017DA3 /* AddressBook.framework */; };
+		7F7848FC1838E46200017DA3 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7848FA1838E46100017DA3 /* AddressBookUI.framework */; };
+		7F7849041838E98000017DA3 /* bg_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7849011838E98000017DA3 /* bg_bubble.png */; };
+		7F7849061838E98000017DA3 /* wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7849031838E98000017DA3 /* wave.png */; };
+		7FB6EEBD1838D2E90074E88F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEBC1838D2E90074E88F /* Foundation.framework */; };
+		7FB6EEBF1838D2E90074E88F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEBE1838D2E90074E88F /* CoreGraphics.framework */; };
+		7FB6EEC11838D2E90074E88F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEC01838D2E90074E88F /* UIKit.framework */; };
+		7FB6EEC71838D2E90074E88F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6EEC51838D2E90074E88F /* InfoPlist.strings */; };
+		7FB6EEC91838D2E90074E88F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEC81838D2E90074E88F /* main.m */; };
+		7FB6EECD1838D2E90074E88F /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EECC1838D2E90074E88F /* SCAppDelegate.m */; };
+		7FB6EED01838D2E90074E88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6EECE1838D2E90074E88F /* Main.storyboard */; };
+		7FB6EED31838D2E90074E88F /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EED21838D2E90074E88F /* SCViewController.m */; };
+		7FB6EED51838D2E90074E88F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6EED41838D2E90074E88F /* Images.xcassets */; };
+		7FB6EEDC1838D2E90074E88F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEDB1838D2E90074E88F /* XCTest.framework */; };
+		7FB6EEDD1838D2E90074E88F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEBC1838D2E90074E88F /* Foundation.framework */; };
+		7FB6EEDE1838D2E90074E88F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB6EEC01838D2E90074E88F /* UIKit.framework */; };
+		7FB6EEE61838D2E90074E88F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6EEE41838D2E90074E88F /* InfoPlist.strings */; };
+		7FB6EEE81838D2E90074E88F /* SoundCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEE71838D2E90074E88F /* SoundCheckTests.m */; };
+		7FB6EF001838DE4F0074E88F /* SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEF41838DE4F0074E88F /* SCUtils.m */; };
+		7FB6EF011838DE4F0074E88F /* SCBubbleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEF61838DE4F0074E88F /* SCBubbleScene.m */; };
+		7FB6EF021838DE4F0074E88F /* SCContentSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEF71838DE4F0074E88F /* SCContentSearchController.m */; };
+		7FB6EF031838DE4F0074E88F /* SCTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEF91838DE4F0074E88F /* SCTrack.m */; };
+		7FB6EF041838DE4F0074E88F /* SCBackgroundBubbleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEFC1838DE4F0074E88F /* SCBackgroundBubbleNode.m */; };
+		7FB6EF051838DE4F0074E88F /* SCTrackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB6EEFF1838DE4F0074E88F /* SCTrackResponse.m */; };
+		8020BFFB1E5E49538F2EAAFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D31E950E7BA48EB920ACA1B /* libPods.a */; };
+		C2D6B310E1624F4EA3052DDD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CC7099BF8A4A81AD244FC1 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FB6EEDF1838D2E90074E88F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB6EEB11838D2E90074E88F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FB6EEB81838D2E90074E88F;
+			remoteInfo = SoundCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080CB402FC69487C94E3428C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		58CC7099BF8A4A81AD244FC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1FEABD1838F11D00FC3EFB /* SCTrackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackTableViewCell.h; sourceTree = "<group>"; };
+		7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackTableViewCell.m; sourceTree = "<group>"; };
+		7F1FEAC01838F29800FC3EFB /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		7F1FEAC218390E1200FC3EFB /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		7F1FEAC41839128100FC3EFB /* SCTrackUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackUser.h; sourceTree = "<group>"; };
+		7F1FEAC51839128100FC3EFB /* SCTrackUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackUser.m; sourceTree = "<group>"; };
+		7F1FEAC91839132200FC3EFB /* DoppioOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DoppioOne-Regular.ttf"; sourceTree = "<group>"; };
+		7F1FEACA1839132200FC3EFB /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		7F1FEACC1839132200FC3EFB /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		7F1FEACD1839132200FC3EFB /* Sintony-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sintony-Bold.ttf"; sourceTree = "<group>"; };
+		7F1FEACE1839132200FC3EFB /* Sintony-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sintony-Regular.ttf"; sourceTree = "<group>"; };
+		7F36688C183A175D00C2E948 /* trackResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trackResponse.json; sourceTree = "<group>"; };
+		7F3720E4183A1F2D00FA8F1F /* SCSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSearchTextField.h; sourceTree = "<group>"; };
+		7F3720E5183A1F2D00FA8F1F /* SCSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSearchTextField.m; sourceTree = "<group>"; };
+		7F45D1D4183992ED008F9A70 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7F45D1D5183992ED008F9A70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7F7848EF1838E43100017DA3 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		7F7848F11838E43A00017DA3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7F7848F31838E44000017DA3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7F7848F51838E44700017DA3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7F7848F71838E45100017DA3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F7848F91838E46100017DA3 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7F7848FA1838E46100017DA3 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		7F7849011838E98000017DA3 /* bg_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bubble.png; sourceTree = "<group>"; };
+		7F7849031838E98000017DA3 /* wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wave.png; sourceTree = "<group>"; };
+		7FB6EEB91838D2E90074E88F /* SoundCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB6EEBC1838D2E90074E88F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FB6EEBE1838D2E90074E88F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FB6EEC01838D2E90074E88F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FB6EEC41838D2E90074E88F /* SoundCheck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCheck-Info.plist"; sourceTree = "<group>"; };
+		7FB6EEC61838D2E90074E88F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FB6EEC81838D2E90074E88F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FB6EECA1838D2E90074E88F /* SoundCheck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundCheck-Prefix.pch"; sourceTree = "<group>"; };
+		7FB6EECB1838D2E90074E88F /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		7FB6EECC1838D2E90074E88F /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		7FB6EECF1838D2E90074E88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FB6EED11838D2E90074E88F /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		7FB6EED21838D2E90074E88F /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		7FB6EED41838D2E90074E88F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7FB6EEDA1838D2E90074E88F /* SoundCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB6EEDB1838D2E90074E88F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7FB6EEE31838D2E90074E88F /* SoundCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundCheckTests-Info.plist"; sourceTree = "<group>"; };
+		7FB6EEE51838D2E90074E88F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FB6EEE71838D2E90074E88F /* SoundCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCheckTests.m; sourceTree = "<group>"; };
+		7FB6EEF41838DE4F0074E88F /* SCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUtils.m; sourceTree = "<group>"; };
+		7FB6EEF51838DE4F0074E88F /* SCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUtils.h; sourceTree = "<group>"; };
+		7FB6EEF61838DE4F0074E88F /* SCBubbleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBubbleScene.m; sourceTree = "<group>"; };
+		7FB6EEF71838DE4F0074E88F /* SCContentSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContentSearchController.m; sourceTree = "<group>"; };
+		7FB6EEF81838DE4F0074E88F /* SCTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrack.h; sourceTree = "<group>"; };
+		7FB6EEF91838DE4F0074E88F /* SCTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrack.m; sourceTree = "<group>"; };
+		7FB6EEFA1838DE4F0074E88F /* SCBubbleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBubbleScene.h; sourceTree = "<group>"; };
+		7FB6EEFB1838DE4F0074E88F /* SCBackgroundBubbleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBackgroundBubbleNode.h; sourceTree = "<group>"; };
+		7FB6EEFC1838DE4F0074E88F /* SCBackgroundBubbleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBackgroundBubbleNode.m; sourceTree = "<group>"; };
+		7FB6EEFD1838DE4F0074E88F /* SCContentSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContentSearchController.h; sourceTree = "<group>"; };
+		7FB6EEFE1838DE4F0074E88F /* SCTrackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTrackResponse.h; sourceTree = "<group>"; };
+		7FB6EEFF1838DE4F0074E88F /* SCTrackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTrackResponse.m; sourceTree = "<group>"; };
+		8D31E950E7BA48EB920ACA1B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E260C53525084ABCAF2C731C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FB6EEB61838D2E90074E88F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB6EEBF1838D2E90074E88F /* CoreGraphics.framework in Frameworks */,
+				7F7848FB1838E46100017DA3 /* AddressBook.framework in Frameworks */,
+				7F7848FC1838E46200017DA3 /* AddressBookUI.framework in Frameworks */,
+				7F7848F81838E45100017DA3 /* CoreLocation.framework in Frameworks */,
+				7F7848F61838E44700017DA3 /* CoreText.framework in Frameworks */,
+				7F7848F41838E44000017DA3 /* QuartzCore.framework in Frameworks */,
+				7F7848F21838E43A00017DA3 /* Security.framework in Frameworks */,
+				7F7848F01838E43100017DA3 /* SpriteKit.framework in Frameworks */,
+				7FB6EEC11838D2E90074E88F /* UIKit.framework in Frameworks */,
+				7FB6EEBD1838D2E90074E88F /* Foundation.framework in Frameworks */,
+				8020BFFB1E5E49538F2EAAFA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB6EED71838D2E90074E88F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F45D1D818399307008F9A70 /* CoreGraphics.framework in Frameworks */,
+				7F45D1D6183992ED008F9A70 /* MobileCoreServices.framework in Frameworks */,
+				7F45D1D7183992ED008F9A70 /* SystemConfiguration.framework in Frameworks */,
+				7F45D1CF183992ED008F9A70 /* AddressBook.framework in Frameworks */,
+				7F45D1D0183992ED008F9A70 /* AddressBookUI.framework in Frameworks */,
+				7F45D1D1183992ED008F9A70 /* CoreLocation.framework in Frameworks */,
+				7F45D1D2183992ED008F9A70 /* QuartzCore.framework in Frameworks */,
+				7F45D1D3183992ED008F9A70 /* SpriteKit.framework in Frameworks */,
+				7FB6EEDC1838D2E90074E88F /* XCTest.framework in Frameworks */,
+				7FB6EEDE1838D2E90074E88F /* UIKit.framework in Frameworks */,
+				7FB6EEDD1838D2E90074E88F /* Foundation.framework in Frameworks */,
+				C2D6B310E1624F4EA3052DDD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F1FEABC1838F10D00FC3EFB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEABD1838F11D00FC3EFB /* SCTrackTableViewCell.h */,
+				7F1FEABE1838F11D00FC3EFB /* SCTrackTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		7F1FEAC71839132200FC3EFB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEAC81839132200FC3EFB /* Doppio_One */,
+				7F1FEACB1839132200FC3EFB /* Sintony */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7F1FEAC81839132200FC3EFB /* Doppio_One */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEAC91839132200FC3EFB /* DoppioOne-Regular.ttf */,
+				7F1FEACA1839132200FC3EFB /* OFL.txt */,
+			);
+			path = Doppio_One;
+			sourceTree = "<group>";
+		};
+		7F1FEACB1839132200FC3EFB /* Sintony */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEACC1839132200FC3EFB /* OFL.txt */,
+				7F1FEACD1839132200FC3EFB /* Sintony-Bold.ttf */,
+				7F1FEACE1839132200FC3EFB /* Sintony-Regular.ttf */,
+			);
+			path = Sintony;
+			sourceTree = "<group>";
+		};
+		7F1FEAD6183920EF00FC3EFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEF81838DE4F0074E88F /* SCTrack.h */,
+				7FB6EEF91838DE4F0074E88F /* SCTrack.m */,
+				7FB6EEFE1838DE4F0074E88F /* SCTrackResponse.h */,
+				7FB6EEFF1838DE4F0074E88F /* SCTrackResponse.m */,
+				7F1FEAC41839128100FC3EFB /* SCTrackUser.h */,
+				7F1FEAC51839128100FC3EFB /* SCTrackUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7F36688B183A175400C2E948 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				7F36688C183A175D00C2E948 /* trackResponse.json */,
+			);
+			name = TestData;
+			sourceTree = "<group>";
+		};
+		7F3720E3183A1ECC00FA8F1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEABC1838F10D00FC3EFB /* Cells */,
+				7F3720E4183A1F2D00FA8F1F /* SCSearchTextField.h */,
+				7F3720E5183A1F2D00FA8F1F /* SCSearchTextField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7F7848ED1838E33F00017DA3 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEF51838DE4F0074E88F /* SCUtils.h */,
+				7FB6EEF41838DE4F0074E88F /* SCUtils.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		7F7848EE1838E35A00017DA3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEFA1838DE4F0074E88F /* SCBubbleScene.h */,
+				7FB6EEF61838DE4F0074E88F /* SCBubbleScene.m */,
+				7FB6EEFB1838DE4F0074E88F /* SCBackgroundBubbleNode.h */,
+				7FB6EEFC1838DE4F0074E88F /* SCBackgroundBubbleNode.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		7F7849001838E98000017DA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEAC218390E1200FC3EFB /* bg.png */,
+				7F1FEAC01838F29800FC3EFB /* cloud.png */,
+				7F7849011838E98000017DA3 /* bg_bubble.png */,
+				7F7849031838E98000017DA3 /* wave.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7FB6EEB01838D2E90074E88F = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEC21838D2E90074E88F /* SoundCheck */,
+				7FB6EEE11838D2E90074E88F /* SoundCheckTests */,
+				7FB6EEBB1838D2E90074E88F /* Frameworks */,
+				7FB6EEBA1838D2E90074E88F /* Products */,
+				E260C53525084ABCAF2C731C /* Pods.xcconfig */,
+				080CB402FC69487C94E3428C /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		7FB6EEBA1838D2E90074E88F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEB91838D2E90074E88F /* SoundCheck.app */,
+				7FB6EEDA1838D2E90074E88F /* SoundCheckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB6EEBB1838D2E90074E88F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F45D1D4183992ED008F9A70 /* MobileCoreServices.framework */,
+				7F45D1D5183992ED008F9A70 /* SystemConfiguration.framework */,
+				7F7848F91838E46100017DA3 /* AddressBook.framework */,
+				7F7848FA1838E46100017DA3 /* AddressBookUI.framework */,
+				7F7848F71838E45100017DA3 /* CoreLocation.framework */,
+				7F7848F51838E44700017DA3 /* CoreText.framework */,
+				7F7848F31838E44000017DA3 /* QuartzCore.framework */,
+				7F7848F11838E43A00017DA3 /* Security.framework */,
+				7F7848EF1838E43100017DA3 /* SpriteKit.framework */,
+				7FB6EEBC1838D2E90074E88F /* Foundation.framework */,
+				7FB6EEBE1838D2E90074E88F /* CoreGraphics.framework */,
+				7FB6EEC01838D2E90074E88F /* UIKit.framework */,
+				7FB6EEDB1838D2E90074E88F /* XCTest.framework */,
+				8D31E950E7BA48EB920ACA1B /* libPods.a */,
+				58CC7099BF8A4A81AD244FC1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FB6EEC21838D2E90074E88F /* SoundCheck */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEF31838D3060074E88F /* Content */,
+				7FB6EEF21838D3010074E88F /* UI */,
+				7FB6EECB1838D2E90074E88F /* SCAppDelegate.h */,
+				7FB6EECC1838D2E90074E88F /* SCAppDelegate.m */,
+				7FB6EED41838D2E90074E88F /* Images.xcassets */,
+				7FB6EEC31838D2E90074E88F /* Supporting Files */,
+			);
+			path = SoundCheck;
+			sourceTree = "<group>";
+		};
+		7FB6EEC31838D2E90074E88F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F36688B183A175400C2E948 /* TestData */,
+				7F1FEAC71839132200FC3EFB /* Fonts */,
+				7F7849001838E98000017DA3 /* Images */,
+				7FB6EEC41838D2E90074E88F /* SoundCheck-Info.plist */,
+				7FB6EEC51838D2E90074E88F /* InfoPlist.strings */,
+				7FB6EEC81838D2E90074E88F /* main.m */,
+				7FB6EECA1838D2E90074E88F /* SoundCheck-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FB6EEE11838D2E90074E88F /* SoundCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEE71838D2E90074E88F /* SoundCheckTests.m */,
+				7FB6EEE21838D2E90074E88F /* Supporting Files */,
+			);
+			path = SoundCheckTests;
+			sourceTree = "<group>";
+		};
+		7FB6EEE21838D2E90074E88F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FB6EEE31838D2E90074E88F /* SoundCheckTests-Info.plist */,
+				7FB6EEE41838D2E90074E88F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FB6EEF21838D3010074E88F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7F3720E3183A1ECC00FA8F1F /* Views */,
+				7F7848EE1838E35A00017DA3 /* Scenes */,
+				7F7848ED1838E33F00017DA3 /* Misc */,
+				7FB6EECE1838D2E90074E88F /* Main.storyboard */,
+				7FB6EED11838D2E90074E88F /* SCViewController.h */,
+				7FB6EED21838D2E90074E88F /* SCViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		7FB6EEF31838D3060074E88F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FEAD6183920EF00FC3EFB /* Models */,
+				7FB6EEFD1838DE4F0074E88F /* SCContentSearchController.h */,
+				7FB6EEF71838DE4F0074E88F /* SCContentSearchController.m */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FB6EEB81838D2E90074E88F /* SoundCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB6EEEB1838D2E90074E88F /* Build configuration list for PBXNativeTarget "SoundCheck" */;
+			buildPhases = (
+				6767E28792C74AF98BF85B40 /* Check Pods Manifest.lock */,
+				7FB6EEB51838D2E90074E88F /* Sources */,
+				7FB6EEB61838D2E90074E88F /* Frameworks */,
+				7FB6EEB71838D2E90074E88F /* Resources */,
+				7A2423E380494EC3B4FF657E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCheck;
+			productName = SoundCheck;
+			productReference = 7FB6EEB91838D2E90074E88F /* SoundCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FB6EED91838D2E90074E88F /* SoundCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB6EEEE1838D2E90074E88F /* Build configuration list for PBXNativeTarget "SoundCheckTests" */;
+			buildPhases = (
+				470F3C094BDA425B8E8C0DD9 /* Check Pods Manifest.lock */,
+				7FB6EED61838D2E90074E88F /* Sources */,
+				7FB6EED71838D2E90074E88F /* Frameworks */,
+				7FB6EED81838D2E90074E88F /* Resources */,
+				CCF493DC74E94577BA7B1641 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FB6EEE01838D2E90074E88F /* PBXTargetDependency */,
+			);
+			name = SoundCheckTests;
+			productName = SoundCheckTests;
+			productReference = 7FB6EEDA1838D2E90074E88F /* SoundCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FB6EEB11838D2E90074E88F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ole Krause-Sparmann";
+				TargetAttributes = {
+					7FB6EED91838D2E90074E88F = {
+						TestTargetID = 7FB6EEB81838D2E90074E88F;
+					};
+				};
+			};
+			buildConfigurationList = 7FB6EEB41838D2E90074E88F /* Build configuration list for PBXProject "SoundCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FB6EEB01838D2E90074E88F;
+			productRefGroup = 7FB6EEBA1838D2E90074E88F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FB6EEB81838D2E90074E88F /* SoundCheck */,
+				7FB6EED91838D2E90074E88F /* SoundCheckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FB6EEB71838D2E90074E88F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1FEAD11839132200FC3EFB /* OFL.txt in Resources */,
+				7F7849041838E98000017DA3 /* bg_bubble.png in Resources */,
+				7F1FEAD31839132200FC3EFB /* Sintony-Regular.ttf in Resources */,
+				7FB6EED51838D2E90074E88F /* Images.xcassets in Resources */,
+				7F1FEAD21839132200FC3EFB /* Sintony-Bold.ttf in Resources */,
+				7F1FEAC11838F29800FC3EFB /* cloud.png in Resources */,
+				7F36688D183A175D00C2E948 /* trackResponse.json in Resources */,
+				7F1FEAD01839132200FC3EFB /* OFL.txt in Resources */,
+				7F7849061838E98000017DA3 /* wave.png in Resources */,
+				7F1FEAC318390E1200FC3EFB /* bg.png in Resources */,
+				7F1FEACF1839132200FC3EFB /* DoppioOne-Regular.ttf in Resources */,
+				7FB6EEC71838D2E90074E88F /* InfoPlist.strings in Resources */,
+				7FB6EED01838D2E90074E88F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB6EED81838D2E90074E88F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB6EEE61838D2E90074E88F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		470F3C094BDA425B8E8C0DD9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		6767E28792C74AF98BF85B40 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		7A2423E380494EC3B4FF657E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		CCF493DC74E94577BA7B1641 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FB6EEB51838D2E90074E88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB6EECD1838D2E90074E88F /* SCAppDelegate.m in Sources */,
+				7FB6EF031838DE4F0074E88F /* SCTrack.m in Sources */,
+				7FB6EF021838DE4F0074E88F /* SCContentSearchController.m in Sources */,
+				7F3720E6183A1F2D00FA8F1F /* SCSearchTextField.m in Sources */,
+				7F1FEABF1838F11D00FC3EFB /* SCTrackTableViewCell.m in Sources */,
+				7FB6EF041838DE4F0074E88F /* SCBackgroundBubbleNode.m in Sources */,
+				7F1FEAC61839128100FC3EFB /* SCTrackUser.m in Sources */,
+				7FB6EED31838D2E90074E88F /* SCViewController.m in Sources */,
+				7FB6EF051838DE4F0074E88F /* SCTrackResponse.m in Sources */,
+				7FB6EEC91838D2E90074E88F /* main.m in Sources */,
+				7FB6EF011838DE4F0074E88F /* SCBubbleScene.m in Sources */,
+				7FB6EF001838DE4F0074E88F /* SCUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB6EED61838D2E90074E88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB6EEE81838D2E90074E88F /* SoundCheckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FB6EEE01838D2E90074E88F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FB6EEB81838D2E90074E88F /* SoundCheck */;
+			targetProxy = 7FB6EEDF1838D2E90074E88F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FB6EEC51838D2E90074E88F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB6EEC61838D2E90074E88F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FB6EECE1838D2E90074E88F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB6EECF1838D2E90074E88F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FB6EEE41838D2E90074E88F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB6EEE51838D2E90074E88F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FB6EEE91838D2E90074E88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FB6EEEA1838D2E90074E88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FB6EEEC1838D2E90074E88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E260C53525084ABCAF2C731C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCheck/SoundCheck-Prefix.pch";
+				INFOPLIST_FILE = "SoundCheck/SoundCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FB6EEED1838D2E90074E88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E260C53525084ABCAF2C731C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCheck/SoundCheck-Prefix.pch";
+				INFOPLIST_FILE = "SoundCheck/SoundCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FB6EEEF1838D2E90074E88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080CB402FC69487C94E3428C /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoundCheck.app/SoundCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCheck/SoundCheck-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SoundCheckTests/SoundCheckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7FB6EEF01838D2E90074E88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080CB402FC69487C94E3428C /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoundCheck.app/SoundCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundCheck/SoundCheck-Prefix.pch";
+				INFOPLIST_FILE = "SoundCheckTests/SoundCheckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FB6EEB41838D2E90074E88F /* Build configuration list for PBXProject "SoundCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB6EEE91838D2E90074E88F /* Debug */,
+				7FB6EEEA1838D2E90074E88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FB6EEEB1838D2E90074E88F /* Build configuration list for PBXNativeTarget "SoundCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB6EEEC1838D2E90074E88F /* Debug */,
+				7FB6EEED1838D2E90074E88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FB6EEEE1838D2E90074E88F /* Build configuration list for PBXNativeTarget "SoundCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB6EEEF1838D2E90074E88F /* Debug */,
+				7FB6EEF01838D2E90074E88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FB6EEB11838D2E90074E88F /* Project object */;
+}
