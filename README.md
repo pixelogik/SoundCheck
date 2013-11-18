@@ -3,7 +3,7 @@ SoundCheck
 
 Playing around with the SoundCloud API
 
-First do "pod intall", then work on workspace.
+First do "pod install" (CocoaPods), then work on workspace.
 
 WHAT IS DOES/HAS:
 
